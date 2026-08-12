@@ -1,4 +1,5 @@
-//Q2 identify parent and child 
+//Q3 show process id 
+
 #include <stdio.h>
 #include <unistd.h>
 
@@ -6,13 +7,6 @@ int main() {
     
     int pid = fork();
 
-    if( pid==0 ) {
-        printf("Hello from parent !");
-    }
-    else {
-        printf("Hello from child !");
-
-    }
-
+    printf("process id = %d\n", getppid());
     return 0;
 }
