@@ -1,12 +1,12 @@
-//Q3 show process id 
+//Q4 show before fork vs after fork
 
 #include <stdio.h>
 #include <unistd.h>
 
 int main() {
-    
+    printf("before fork\n");
     int pid = fork();
 
-    printf("process id = %d\n", getppid());
+    printf("after fork\n");
     return 0;
 }
